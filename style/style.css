@@ -1,0 +1,666 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* 
+font-family: "Quicksand", sans-serif;
+font-family: "Raleway", sans-serif;
+*/
+
+/* - - - - - - - Shared Styles- - - - - - - */
+
+* {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* -----------------------------------------------------Header Styles----------------------------------------------------- */
+
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.nav-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo img {
+  width: 62px;
+  height: 62px;
+}
+
+.navbar-logo h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(17, 17, 17);
+  margin: 0;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-links a:hover {
+  opacity: 0.7;
+}
+
+.navbar-links a:nth-child(1) {
+  color: rgb(254, 163, 1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.navbar-links a:nth-child(2) {
+  color: rgb(1, 172, 253);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.navbar-links a:nth-child(3) {
+  color: rgb(5, 212, 223);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.navbar-links a:nth-child(4) {
+  color: rgb(93, 88, 239);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: rgb(254, 163, 1);
+  color: #ffffff;
+  border: none;
+  width: 197px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e67e22;
+}
+
+/* - - - - - - - -- - ---- ----- ------- */
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+#bt-p1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  color: rgb(254, 163, 1);
+}
+
+#bt-p2 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  color: rgb(17, 17, 17);
+}
+
+#bt-p3 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  color: rgb(17, 17, 17);
+}
+
+#bt-p4 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  color: rgb(1, 172, 253);
+}
+
+.banner-text p {
+  color: rgb(17, 17, 17);
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  max-width: 640px;
+  height: 50px;
+}
+
+.enroll-btn {
+  background-color: rgb(17, 17, 17);
+  color: #ffffff;
+  border: none;
+  width: 197px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: rgba(17, 17, 17, 0.747);
+}
+
+/* ---------------------------------------------Curriculum Section-------------------------------------- */
+
+.curriculum-section {
+  background: url("../assets/bg.png");
+  margin-bottom: 60px;
+}
+
+.curriculum-title {
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.card-container {
+  display: flex;            
+  justify-content: center;  
+  flex-wrap: wrap;          
+  gap: 30px;                
+  margin-bottom: 80px;
+}
+
+.card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  width: 367.8px;
+  height: 476.78px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(222, 245, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.card-1 h2 {
+  margin-top: 37.4px;
+  margin-bottom: 33px;
+  text-align: center;
+  color: rgb(32, 32, 32);
+  font-family: Quicksand;
+  font-size: 24.52px;
+  font-weight: 700;
+  line-height: 30.65px;
+}
+
+.card-1 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15.09px;
+  font-weight: 500;
+  line-height: 28.3px;
+  text-align: center;
+  color: rgb(128, 128, 128);
+}
+
+.card-1 button {
+  color: rgb(100, 200, 255);
+  background-color: transparent;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  font-size: 15.09px;
+  font-weight: 700;
+  line-height: 28.3px;
+  margin-top: 38.67px;
+}
+
+.card-1 button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 367.8px;
+  height: 476.78px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.card-2 h2 {
+  margin-top: 37.4px;
+  margin-bottom: 33px;
+  text-align: center;
+  color: rgb(32, 32, 32);
+  font-family: Quicksand;
+  font-size: 24.52px;
+  font-weight: 700;
+  line-height: 30.65px;
+}
+
+.card-2 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15.09px;
+  font-weight: 500;
+  line-height: 28.3px;
+  text-align: center;
+  color: rgb(128, 128, 128);
+}
+
+.card-2 button {
+  color: rgb(240, 170, 0);
+  background-color: transparent;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  font-size: 15.09px;
+  font-weight: 700;
+  line-height: 28.3px;
+  margin-top: 38.67px;
+}
+
+.card-2 button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 367.8px;
+  height: 476.78px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(242, 232, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.card-3 h2 {
+  margin-top: 37.4px;
+  margin-bottom: 33px;
+  text-align: center;
+  color: rgb(32, 32, 32);
+  font-family: Quicksand;
+  font-size: 24.52px;
+  font-weight: 700;
+  line-height: 30.65px;
+}
+
+.card-3 p {
+  font-family: "Raleway", sans-serif;
+  font-size: 15.09px;
+  font-weight: 500;
+  line-height: 28.3px;
+  text-align: center;
+  color: rgb(128, 128, 128);
+}
+
+.card-3 button {
+  color: rgb(135, 0, 255);
+  background-color: transparent;
+  font-family: "Quicksand", sans-serif;
+  border: none;
+  font-size: 15.09px;
+  font-weight: 700;
+  line-height: 28.3px;
+  margin-top: 38.67px;
+}
+
+.card-3 button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.arrow-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.arrow-btn-container .arrow-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24px;
+  border-radius: 30px;
+  background: rgb(254, 163, 1);
+}
+
+.arrow-btn:hover {
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------Story Section ---------------------------------------------- */
+
+.stories-section {
+  background: url("../assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  padding-bottom: 60px;
+}
+
+.story-title {
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-date {
+  position: absolute;
+  bottom: -22px;
+  left: 15px;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 29px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+}
+
+.style-1 {
+  background-color: rgb(60, 216, 232);
+}
+.style-2 {
+  background-color: rgb(149, 178, 38);
+}
+.style-3 {
+  background-color: rgb(93, 88, 240);
+}
+.style-4 {
+  background-color: rgb(149, 178, 38);
+}
+.style-5 {
+  background-color: rgb(149, 178, 38);
+}
+
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  margin: 10px 0 10px 0;
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.35px;
+  color: #333;
+}
+
+.card-content p {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------Footer Styles--------------------------------------- */
+
+footer {
+  background: rgb(1, 172, 253);
+  color: #ffffff;
+  height: 519px;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-part-1 {
+  flex-basis: 50%;
+}
+
+.footer-p1-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-p1-top img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.footer-p1-top h1 {
+  font-size: 42.14px;
+  font-weight: 700;
+  line-height: 39.51px;
+  line-height: 1.2;
+}
+
+.footer-p1-bottom p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.footer-part-2 h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-p2-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-p2-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-p2-links a:hover {
+  text-decoration: overline;
+}
+
+.footer-part-3 h4 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-p3-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-p3-socials img {
+  width: 40.61px;
+  height: 40px;
+}
+
+.footer-p3-socials img:hover {
+  transform: translateY(-5px);
+  transition: 0.9s ease-in-out;
+  cursor: pointer;
+}
+
+/* -----------------------------------------------
+   Responsive Styles----------------------------- */
+@media screen and (max-width: 576px) {
+  .navbar-links,
+  .navbar-btn {
+    display: none;
+  }
+
+  .navbar {
+    border-top: none;
+    border-bottom: 2px solid #ffc880;
+    padding: 15px 0;
+  }
+
+  .nav-sec::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    background-image: url("../assets/hamburger.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+  .enroll-btn {
+    margin-top: 20px;
+  }
+  .banner-img {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-section,
+  .banner {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+
+  .footer-part-2 {
+    margin-top: 20px;
+  }
+
+  .footer-part-3 {
+    margin-top: 20px;
+  }
+
+   .blog-grid {
+        /* This adds 20px of space on the left and right */
+        padding: 0 20px; 
+    }
+}
+
+@media (min-width: 992px) {
+  .story-card {
+    grid-row: span 2;
+  }
+}
