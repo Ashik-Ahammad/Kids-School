@@ -622,6 +622,7 @@ footer {
 
   .banner-text {
     text-align: center;
+    max-width: 80%;
   }
   .enroll-btn {
     margin-top: 20px;
@@ -629,6 +630,10 @@ footer {
   .banner-img {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+
+  .hero-kid-img{
+    max-width: 100%;
   }
 
   .card-container {
